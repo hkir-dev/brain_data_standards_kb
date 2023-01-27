@@ -15,7 +15,7 @@ if [ -n "${BACKUPFILE}" ]; then
       cd -
     fi
     if [ -f /backup/neo4j.dump ]; then
-      echo 'Resore KB from given backup'
+      echo 'Restore KB from given backup'
       /var/lib/neo4j/bin/neo4j-admin load --from=/backup/neo4j.dump --verbose --force
     fi
   fi

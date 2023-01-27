@@ -5,6 +5,8 @@ ENV CSV_IMPORTS=/input/dumps/csv_imports
 
 ENV NEOREADONLY=true
 
+ENV BACKUPFILE="neo4j.dump"
+
 ENV NEO4J_dbms_memory_heap_maxSize=4G
 ENV NEO4J_dbms_memory_heap_initial__size=1G
 ENV NEO4J_dbms_read__only=true
