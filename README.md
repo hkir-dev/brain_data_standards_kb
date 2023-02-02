@@ -1,7 +1,7 @@
 # Brain Data Standards KB
 A repository for the Brain Data Standards knowledge graph.
 
-## Build and Run
+## Local Build and Run
 To build the project, clone the project to your computer and run the following commands in the project root folder:
 ```
 docker build -t bds/kb-prod:standalone .
@@ -13,6 +13,12 @@ docker run -d -p:7473:7474 -p 7686:7686 -v $PWD/backup:/backup --env-file ./env.
 ```
 
 At startup, KB automatically loads the backup data and you can start exploring the knowledge graph through your browser.
+
+## DockerHub Based Run
+Alternative to local approach, DockerHub image can be used:
+```
+docker run -d -p:7473:7474 -p 7686:7686 hkir/kb-prod:standalone
+```
 
 ### _Debug Running Container [Optional]_
 Please follow the given steps to make sure the KB starts successfully.
